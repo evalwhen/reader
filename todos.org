@@ -1,4 +1,4 @@
-* Tasks [1/1]
+* Tasks [1/5]
 
 - [X] study conf, where is config
 - [ ] redesign ui
@@ -8,3 +8,9 @@
 
 * Notes
 (truename (radiance:environment-directory T :configuration))
+
+* Resource
+
+https://github.com/Shirakumo/radiance-tutorial/blob/master/Part%208.md
+https://github.com/evalwhen/reader
+https://github.com/Shirakumo/radiance-contribs
