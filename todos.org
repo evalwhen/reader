@@ -3,3 +3,8 @@
 - [X] study conf, where is config
 - [ ] redesign ui
 - [ ] create some api
+- [ ] environment
+- [ ] interface and model
+
+* Notes
+(truename (radiance:environment-directory T :configuration))

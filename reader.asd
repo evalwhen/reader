@@ -21,6 +21,7 @@
                (:file "db")
                (:file "cache")
                (:file "reader")
+               (:file "api")
                (:file "atom"))
   :depends-on ((:interface :database)
                (:interface :auth)
@@ -28,6 +29,7 @@
                :r-data-model
                :local-time
                :r-clip
+               :i-json
                :3bmd
                :3bmd-ext-code-blocks
                :cl-markless-plump
