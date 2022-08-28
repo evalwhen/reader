@@ -16,3 +16,4 @@
 https://github.com/Shirakumo/radiance-tutorial/blob/master/Part%208.md
 https://github.com/evalwhen/reader
 https://github.com/Shirakumo/radiance-contribs
+https://github.com/gordonnl/markdown-blog-template/blob/master/pages/test.md
