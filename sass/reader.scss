@@ -5,3 +5,12 @@
 .bulma-block-mixin {
   @include block(5rem);
 }
+
+// add bottom border
+.has-bottom-border {
+  border-bottom: 2px LightGrey solid;
+}
+
+.article-padding {
+    padding: 6rem;
+}

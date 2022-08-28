@@ -30,13 +30,16 @@
     <section class="section">
         <div class="container is-max-desktop">
             <!-- <div class="content box has-background-light"> -->
-            <div class="content box">
+            <div class="content box article-padding">
                 <c:using value="article">
-                    <div class="level bulma-block-mixin">
-                        <div class="level-item has-text-centered">
+                    <!-- <div class="level bulma-block-mixin has-bottom-border">
+                        <div class="level-item">
                             <p class="title has-text-weight-light"lquery="(text title)">TITLE</p>
                         </div>
 
+                    </div> -->
+                    <div class="bulma-block-mixin has-bottom-border">
+                        <h1 class="title has-text-weight-light" lquery="(text title)">TITLE</h1>
                     </div>
 
                     <div class="">
