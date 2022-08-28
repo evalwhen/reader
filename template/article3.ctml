@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        <c:splice lquery="(text (clip article 'title))" /> -
+        <c:splice lquery="(text title)" />
+    </title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Reader Blog" lquery="(attr :content description)" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" @href="/static/reader/css/reader.css" />
+    <link @href="/api/reader/atom" type="application/atom+xml" rel="alternate" title="Reader Atom Feed" />
+    <link @href="/api/reader/rss" type="application/rss+xml" rel="alternate" title="Reader RSS Feed" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" lquery="(attr :content (clip article 'title))" />
+    <meta name="twitter:description" lquery='(attr :content (reader::article-description article))' />
+    <meta name="twitter:image" lquery='(attr :content (reader::article-image article))' />
+    <meta name="twitter:image:alt" content="Header" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" lquery="(attr :content (clip article 'title))" />
+    <meta property="og:description" lquery='(attr :content (reader::article-description article))' />
+    <meta property="og:image" lquery='(attr :content (reader::article-image article))' />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- <div class="content box has-background-light"> -->
+            <div class="content box">
+                <c:using value="article">
+                    <div class="level bulma-block-mixin">
+                        <div class="level-item has-text-centered">
+                            <p class="title has-text-weight-light"lquery="(text title)">TITLE</p>
+                        </div>
+
+                    </div>
+
+                    <div class="">
+                        <c:noop as="div" lquery="(html (reader::article-content *))">
+                            TEXT
+                        </c:noop>
+                    </div>
+                </c:using>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -218,7 +218,7 @@
          (next (dm:get-one 'articles (db:query (:> '_id (dm:id article))) :sort '(("_id" :ASC))))
          (prev (dm:get-one 'articles (db:query (:< '_id (dm:id article))) :sort '(("_id" :DESC)))))
     (when recache-content (setf (gethash (dm:id article) *article-contents*) NIL))
-    (with-template-to-cache ((cache-file :article (dm:id article)) "article.ctml")
+    (with-template-to-cache ((cache-file :article (dm:id article)) "article3.ctml")
       (r-clip:process
        T
        :article article

@@ -1,0 +1,25 @@
+{
+  "name": "reader",
+  "version": "1.0.0",
+  "description": "About Reader ------------ Reader is a simple blogging platform for [Radiance](https://github.com/Shinmera/Radiance).",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/reader.scss static/css/reader.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evalwhen/reader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evalwhen/reader/issues"
+  },
+  "homepage": "https://github.com/evalwhen/reader#readme",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.1"
+  }
+}
