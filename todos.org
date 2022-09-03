@@ -1,12 +1,14 @@
-* Tasks [1/7]
+* Tasks [2/8]
 
 - [X] study conf, where is config
 - [ ] redesign ui
 - [ ] create some api
 - [ ] environment
 - [ ] interface and model
-- [ ] design article list
+- [X] design article list
 - [ ] design welcome page
+- [ ] design about page
+- [ ] redesign nav bar
 
 * Notes
 (truename (radiance:environment-directory T :configuration))
