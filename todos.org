@@ -9,6 +9,7 @@
 - [ ] design welcome page
 - [ ] design about page
 - [ ] redesign nav bar
+- [ ] design log
 
 * Notes
 (truename (radiance:environment-directory T :configuration))
