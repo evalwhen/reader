@@ -7884,3 +7884,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .article-padding {
   padding: 6rem; }
+
+.index-padding {
+  padding: 6rem;
+  padding-top: 1.25rem; }
+
+.nav-margin:not(:last-child) {
+  margin-bottom: 3rem; }

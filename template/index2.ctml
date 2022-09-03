@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title lquery="(text title)">Reader</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Reader Blog" lquery="(attr :content description)" />
+    <meta name="robots" content="index, follow" />
+    <!-- <link rel="stylesheet" type="text/css" @href="/static/reader/reader.css" /> -->
+    <link rel="stylesheet" type="text/css" @href="/static/reader/css/reader.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link @href="/api/reader/atom" type="application/atom+xml" rel="alternate" title="Reader Atom Feed" />
+    <link @href="/api/reader/rss" type="application/rss+xml" rel="alternate" title="Reader RSS Feed" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" lquery="(attr :content title)" />
+    <meta name="twitter:description" lquery='(attr :content description)' />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" lquery="(attr :content title)" />
+    <meta property="og:description" lquery='(attr :content description)' />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- <div class="content box has-background-light"> -->
+            <div class="content box index-padding">
+                <!-- navbar -->
+                <nav class="navbar nav-margin" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="https://bulma.io">
+                            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                        </a>
+
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item">
+                                Home
+                            </a>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    More
+                                </a>
+
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">
+                                        About
+                                    </a>
+                                    <a class="navbar-item">
+                                        Jobs
+                                    </a>
+                                    <a class="navbar-item">
+                                        Contact
+                                    </a>
+                                    <hr class="navbar-divider">
+                                    <a class="navbar-item">
+                                        Report an issue
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                    <a class="button is-primary">
+                                        <strong>Sign up</strong>
+                                    </a>
+                                    <a class="button is-light">
+                                        Log in
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <!-- <nav class="navbar">
+                        <div>
+                            <h1 lquery="(text title)">Reader</h1>
+                            <span id="" lquery="(text description)">Description</span>
+                            <a @href="reader/" id="index-link">Index</a>
+                            <a @href="/api/reader/atom" id="rss-link"
+                                title="RSS/Atom feed for the blog entries.">RSS</a>
+                        </div>
+                    </nav> -->
+                <section id="generic-body">
+                    <c:if test="articles">
+                        <c:then>
+                            <ul iterate="articles" class="article-listing">
+                                <li>
+                                    <article>
+                                        <header>
+                                            <h2><a href="#" @href="reader/article/{0} _id"
+                                                    lquery="(text title)">LINK</a></h2>
+                                            <div class="date" lquery="(text (format-human-date time))">20xx.xx.xx
+                                            </div>
+                                        </header>
+                                        <blockquote lquery="(html (reader::article-excerpt *))">
+                                            TEXT
+                                        </blockquote>
+                                        <br style="clear:both;" />
+                                    </article>
+                                </li>
+                            </ul>
+                        </c:then>
+                        <c:else>
+                            <h2 style="text-align:center;">There are no articles yet.</h2>
+                            <p>
+                                You should <a @href="reader/write/">write</a> one.
+                            </p>
+                        </c:else>
+                    </c:if>
+                </section>
+                <footer>
+                    <nav id="move">
+                        <c:when test="(< 1 page)">
+                            <a @href='reader/page/{0} (1- page)' class="prev">Newer Entries</a>
+                        </c:when>
+                        <c:when test="has-more">
+                            <a @href='reader/page/{0} (1+ page)' class="next">Older Entries</a>
+                        </c:when>
+                    </nav>
+                </footer>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+

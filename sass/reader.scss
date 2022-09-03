@@ -14,3 +14,13 @@
 .article-padding {
     padding: 6rem;
 }
+
+.index-padding {
+    padding: 6rem;
+    padding-top: 1.25rem;
+}
+
+// add bottom margin
+.nav-margin{
+  @include block(3rem);
+}

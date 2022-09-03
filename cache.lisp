@@ -187,7 +187,7 @@
          (pages (partition articles *app*)))
     (loop for page in (or pages '(()))
           for index from 0
-          do (with-template-to-cache ((cache-file :index index) "index.ctml")
+          do (with-template-to-cache ((cache-file :index index) "index2.ctml")
                (r-clip:process
                 T
                 :articles page
