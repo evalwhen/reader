@@ -7883,11 +7883,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   border-bottom: 2px LightGrey solid; }
 
 .article-padding {
-  padding: 6rem; }
+  padding: 6em; }
 
 .index-padding {
-  padding: 6rem;
-  padding-top: 1.25rem; }
+  padding: 6em;
+  padding-top: 1.25em; }
 
 .nav-margin:not(:last-child) {
   margin-bottom: 3rem; }

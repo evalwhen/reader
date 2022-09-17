@@ -28,7 +28,7 @@
     <section class="section">
         <div class="container is-max-desktop">
             <!-- <div class="content box has-background-light"> -->
-            <div class="content box index-padding">
+            <div class="content box index-padding p-0">
                 <!-- navbar -->
                 <nav class="navbar nav-margin" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
