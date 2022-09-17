@@ -1,7 +1,9 @@
-* Tasks [2/8]
+* Tasks [3/11]
+
+- [ ] add index link at article page
 
 - [X] study conf, where is config
-- [ ] redesign ui
+- [X] redesign ui
 - [ ] create some api
 - [ ] environment
 - [ ] interface and model
@@ -10,6 +12,7 @@
 - [ ] design about page
 - [ ] redesign nav bar
 - [ ] design log
+
 
 * Notes
 (truename (radiance:environment-directory T :configuration))
