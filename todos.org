@@ -1,6 +1,7 @@
 * Tasks [3/11]
 
 - [ ] add index link at article page
+- [ ] local emacs connect to swank server.
 
 - [X] study conf, where is config
 - [X] redesign ui
@@ -12,6 +13,7 @@
 - [ ] design about page
 - [ ] redesign nav bar
 - [ ] design log
+
 
 
 * Notes
