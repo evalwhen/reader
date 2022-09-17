@@ -30,7 +30,7 @@
     <section class="section">
         <div class="container is-max-desktop">
             <!-- <div class="content box has-background-light"> -->
-            <div class="content box article-padding p-0">
+            <div class="content box">
                 <c:using value="article">
                     <!-- <div class="level bulma-block-mixin has-bottom-border">
                         <div class="level-item">
