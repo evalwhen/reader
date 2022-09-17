@@ -39,3 +39,7 @@ Configuration Variables
 Permissions
 -----------
 * `(reader write)`
+
+Frontend
+
+npm start
