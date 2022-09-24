@@ -42,7 +42,7 @@
                         <h1 class="title has-text-weight-light" lquery="(text title)">TITLE</h1>
                     </div>
 
-                    <div class="">
+                    <div class="has-text-weight-medium">
                         <c:noop as="div" lquery="(html (reader::article-content *))">
                             TEXT
                         </c:noop>
